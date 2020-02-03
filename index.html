@@ -1,0 +1,36 @@
+<html>
+	<body>
+		<h1 style="text-align: center;">paul est le plus fort de la terre</h1> 
+		<h2 style="text-align: center;">
+			chloé est la plus <input type="string" id="roulou">
+			<button id="bouton">verifier</button>
+			<div id="loumo" style="color:red"></div>
+		</h2>
+	</body>
+	<script type="text/javascript">
+
+
+
+		function dislaverite()
+		{
+		  var roulou = document.getElementById("roulou");
+		  var resultat = "vrai"
+		  var color = "green"
+		  var font_size = "120px"
+		  if (["moche","jolie jumpers"].indexOf(roulou.value) == -1 ){
+		  		resultat = "faux";
+		  		color = "red"
+		  		font_size = "12px"
+		  }
+		 var loumo = document.getElementById("loumo")
+		 loumo.innerHTML = resultat
+		 loumo.style.color = color
+		 loumo.style.fontSize = font_size
+		}
+
+		var bouton = document.getElementById("bouton");
+		bouton.onclick = dislaverite;
+
+	</script>
+
+</html>
